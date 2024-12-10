@@ -50,3 +50,21 @@ button {
     border: none; /* Remove button border */
     cursor: pointer; /* Set cursor to pointer on hover */
 }
+buttonbig {
+    padding: 40px 80px;
+    /* Set padding for buttons */
+    margin: 0 10px;
+    /* Set margin around buttons */
+    font-size: 104px;
+    /* Set font size for buttons */
+    font-family: 'Sacramento', cursive;
+    /* Apply Sacramento font to the options */
+    background-color: #FB607F;
+    /* Set button background color */
+    color: white;
+    /* Set text color to white */
+    border: none;
+    /* Remove button border */
+    cursor: pointer;
+    /* Set cursor to pointer on hover */
+}
