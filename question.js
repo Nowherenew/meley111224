@@ -62,7 +62,7 @@ function displayCatHeart() {
         document.getElementById('hehe').style.display = 'contents';
     };
     setTimeout(function () {
-        window.location.href = "flower.html";
+        window.location.href = "/Nowherenew/flower.html";
     }, 5000);
 
 }
