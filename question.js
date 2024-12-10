@@ -68,7 +68,7 @@ function displayCatHeart() {
         document.getElementById('wait').style.display = 'contents';
         document.getElementById('hehe').style.display = 'contents';
     };
-    var audio = new Audio("/audio.mp3");
+    var audio = new Audio("audio.mp3");
     audio.play();
     setTimeout(function () {
         window.location.href = "/meley191299/flower.html";
