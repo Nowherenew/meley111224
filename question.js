@@ -69,6 +69,7 @@ function displayCatHeart() {
         document.getElementById('hehe').style.display = 'contents';
     };
     var audio = new Audio("http://nowherenew.github.io/meley191299/audio.mp3");
+    setTimeout(function (){},2000);
     audio.play();
     setTimeout(function () {
         window.location.href = "/meley191299/flower.html";
