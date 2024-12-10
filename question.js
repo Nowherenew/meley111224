@@ -2,6 +2,7 @@
 
 // Function to handle button click events
 var dung = "Đúng";
+var decCount = 0;
 function selectOption(option) {
     // Check which option was clicked
     if (option === 'no') {
@@ -19,6 +20,12 @@ function selectOption(option) {
         var currentFontSize = window.getComputedStyle(noButton).getPropertyValue('font-size');
         var newSize = parseFloat(currentFontSize) * 2; // Increase font size by  * 2px
         noButton.style.fontSize = newSize + 'px';
+        if (decCount < 2) {
+            var yesButton = document.getElementById('yes-button');
+            currentFontSize = window.getComputedStyle(yesButton).getPropertyValue('font-size');
+            newSize = parseFloat(currentFontSize) / 2; // Increase font size by  * 2px
+            yesButton.style.fontSize = newSize + 'px';
+        }
     } else {
         // If neither "Yes" nor "No" was clicked, show an alert message
         alert('Invalid option!');
@@ -61,8 +68,10 @@ function displayCatHeart() {
         document.getElementById('wait').style.display = 'contents';
         document.getElementById('hehe').style.display = 'contents';
     };
+    var audio = new Audio('/Nowherenew/audio.mp3');
+    audio.play();
     setTimeout(function () {
         window.location.href = "/Nowherenew/flower.html";
-    }, 5000);
+    }, 8000);
 
 }
